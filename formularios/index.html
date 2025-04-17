@@ -1,12 +1,38 @@
-<html lang="pt-br">
+<html lang="pt-Br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário de Cadastro</title>
 </head>
 <body>
-    <form>
-        
+    <form name="signup" autocomplete="on" target="_parent" method="POST" action="#">
+        <!-- 
+        name, nome para poder encontrar e acessar essa tag
+        action, servidor que realizara a ação do formulário
+        method, método ou verbo de comunicação web
+        target, definir como o submit vai agir, abrindo outra aba ou na mesma aba
+        autocomplete, salva dados para serem usados novamente ao voltar a página
+        -->
+        <label>Text: </label><input type="text"><br>
+        <label>Number: </label><input type="number" min="0" step="5" max="99"><br>
+        <label>Button: </label><input type="button" value="Enviar"><button type="reset">Limpar</button><br>
+        <label>Range: </label><input type="range" min="0" max="100" value="60"><br>
+        <label>Color: </label><input type="color"><br>
+        <label>E-mail: </label><input type="email"><br>
+        <label>Url: </label><input type="url"><br>
+        <label>Date: </label><input type="date"><br>
+        <label>Week: </label><input type="week"><br> <!--Não funciona no firefox-->
+        <label>Month: </label><input type="month"><br> <!--Não funciona no firefox-->
+        <label>Checkbox: </label><input type="checkbox"><input type="checkbox"><br>
+        <label>Radio: </label><input type="radio" name="aceita"><input type="radio" name="aceita"><br>
+        <label>Hidden: </label><input type="hidden"><br>
+        <label>File: </label><input type="file" multiple><br>
+        <label>Search: </label><input type="search"><br> <!--Não funciona no firefox-->
+
+        <div>
+            <div> teste <u>teste</u></div>
+            <div><img src="" alt="" align=""></div>
+        </div>
     </form>
 </body>
 </html>
