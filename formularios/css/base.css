@@ -1,0 +1,220 @@
+:root {
+    --lilas-claro: #D7C3F2;
+    --lilas-escuro: #7C5E99;
+    --branco: #FFFFFF;
+    --nude-rosado: #F5E0DC;
+    --nude-escuro: #EACAC3;
+    --lavanda-escuro: #5D4B71;
+    --fonte-titulo: 'Playfair Display', serif;
+    --fonte-texto: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 1200px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+.menu {
+    background-color: var(--lilas-claro);
+    color: var(--lilas-escuro);
+    /* Melhor contraste */
+    font-family: var(--fonte-texto);
+    font-weight: 600;
+}
+
+.menu a {
+    color: var(--lilas-escuro);
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: var(--nude-escuro);
+    color: var(--lavanda-escuro);
+}
+
+.header {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.content {
+    background-color: var(--branco);
+    color: var(--lavanda-escuro);
+    font-family: var(--fonte-texto);
+    padding: 32px;
+}
+
+.content h2,
+.content h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--lilas-escuro);
+    margin-bottom: 16px;
+}
+
+.content_fachada{
+    text-align: center;
+}
+
+.fachada {
+    display: inline-block;
+}
+
+.tb_servico_valor {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tb_servico_valor thead {
+    text-align: center;
+}
+
+.th_servico {
+    text-align: left;
+}
+
+.tr_servico {
+    width: 200px;
+}
+
+.tr_servico,
+.hr_seg_sex,
+.hr_sab,
+.hr_feriado,
+.tr_valor {
+    padding: 5px;
+}
+
+.hr_seg_sex,
+.hr_sab,
+.hr_feriado,
+.tr_valor {
+    width: 100px;
+    text-align: center;
+}
+
+.tb_servico_valor tbody tr:hover td {
+    background-color: var(--nude-rosado);
+}
+
+.maps {
+    text-align: center;
+}
+
+.maps iframe {
+    display: inline-block;
+}
+
+.form_contato {
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: var(--fonte-texto);
+    color: var(--lavanda-escuro);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    font-family: var(--fonte-texto);
+    color: var(--lavanda-escuro);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--lilas-claro);
+    box-shadow: 0 0 4px var(--lilas-claro);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.form-buttons button,
+.form-buttons input[type="submit"] {
+    background-color: var(--lilas-escuro);
+    color: var(--branco);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: var(--fonte-texto);
+    cursor: pointer;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+.form-buttons button:hover,
+.form-buttons input[type="submit"]:hover {
+    background-color: var(--lavanda-escuro);
+}
+
+.footer {
+    background-color: var(--nude-escuro);
+    /* mais escuro que o nude rosado */
+    color: var(--lavanda-escuro);
+    /* visível sobre nude */
+    font-family: var(--fonte-texto);
+    font-size: 14px;
+    padding: 24px;
+    text-align: center;
+    min-height: 150px;
+}
+
+.footer p {
+    color: var(--lavanda-escuro);
+    text-decoration: underline;
+    margin: 0 8px;
+
+}
+
+.footer .social-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 6px;
+    filter: brightness(0) invert(1);
+}
